@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="../assets/lk.css">
+
+</head>
+<body>
+
+<div class="lk-container">
+    <div class="profile-header">
+        <h2 class="lk-header">Личный кабинет</h2>
+        <div class="avatar-container">
+            <img id="user-avatar" src="../public/images/default-avatar.jpg" alt="Аватар" class="user-avatar">
+            <button class="button avatar-button" onclick="updateAvatar()">Изменить аватар</button>
+<!--            <input type="file" id="avatar-input" style="display: none;" onchange="updateAvatar(this)">-->
+        </div>
+    </div>
+
+    <div class="user-profile">
+        <h3>Профиль</h3>
+        <p>Имя: <span id="user-first-name">Иван</span></p>
+        <p>Фамилия: <span id="user-last-name">Иванов</span></p>
+        <p>Телефон: <span id="user-phone">+7 (900) 123-45-67</span></p>
+        <p>Электронная почта: <span id="user-email">ivan@example.com</span></p>
+        <p>Город: <span id="user-city">Москва</span></p>
+    </div>
+
+    <button class="button back-button" onclick="window.location.href='../templates/start.html'">Вернуться на главную</button>
+    <button class="button password-button" onclick="changePassword()">Сменить пароль</button>
+</div>
+
+
+<script type="module" src="../components/lk.js"></script>
+</body>
+</html>

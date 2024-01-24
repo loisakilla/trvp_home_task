@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item and Material Search System</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+
+<div class="button-style user-cabinet">
+    <img src="../public/images/default-avatar.jpg" alt="Аватар" class="user-avatar">
+    <a href="lk.html">Личный кабинет</a>
+</div>
+<div class="button-style out">
+    <a href="../index.html">Выйти из системы</a>
+</div>
+
+
+<div class="container">
+    <h1>Система поиска изделий и материалов</h1>
+
+    <div class="selection-area">
+        <label for="materials-dropdown">Выберите материал из списка</label>
+        <select id="materials-dropdown">
+            <!-- Options will be dynamically populated using JS -->
+        </select>
+
+        <label for="items-dropdown">Выберите изделие из списка</label>
+        <select id="items-dropdown">
+            <!-- Options will be dynamically populated using JS -->
+        </select>
+
+        <button id="search-btn">Поиск</button>
+    </div>
+
+    <div id="results-area">
+        <!-- Results will be dynamically populated using JS -->
+    </div>
+</div>
+
+<script type="module" src="../components/scripts.js"></script>
+</body>
+</html>

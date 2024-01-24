@@ -1,0 +1,155 @@
+/* Общие стили страницы */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', serif;
+    background-color: #f4f4f4;
+}
+
+/* Контейнер личного кабинета */
+.lk-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок личного кабинета */
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.lk-header {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Контейнер для аватарки */
+.avatar-container {
+    display: flex;
+    flex-direction: row; /* Меняем порядок элементов: аватар будет справа */
+    align-items: center; /* Выравнивание элементов по вертикали */
+}
+
+.user-avatar {
+    margin-right: 10px; /* Добавляем отступ между аватаркой и кнопкой */
+    width: 80px; /* Размер аватарки */
+    height: 80px; /* Размер аватарки */
+    border-radius: 50%; /* Делаем аватарку круглой */
+}
+
+.avatar-button {
+    background-color: #007bff; /* Цвет кнопки */
+    color: white;
+    border: none;
+    border-radius: 20px; /* Скругление углов кнопки */
+    padding: 10px 20px; /* Внутренние отступы кнопки */
+    font-size: 16px; /* Размер шрифта текста на кнопке */
+    cursor: pointer;
+    box-shadow: none; /* Убираем тень, если она была */
+    transition: background-color 0.3s;
+}
+
+/* Кнопки */
+.button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #4e555b;
+}
+
+/* Стили для профиля пользователя */
+.user-profile {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Заголовки в блоке профиля и избранного */
+.user-profile h3, .favorites h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+/* Стили для блоков с избранными материалами и изделиями */
+.favorites {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.password-button {
+    background-color: #007bff;
+    margin-left: 584px;
+    bottom: 20px;
+}
+
+.back-button {
+    background-color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .avatar-container {
+        flex-direction: column-reverse; /* Стекаем элементы вертикально */
+        align-items: center; /* Выравнивание по центру */
+    }
+
+    .user-avatar {
+        margin-left: 0; /* Убираем левый отступ для мобильных устройств */
+        margin-bottom: 10px; /* Добавляем нижний отступ */
+    }
+
+    .avatar-button {
+        order: 2; /* Кнопка идет после аватарки */
+        margin-bottom: 0; /* Убираем отрицательный отступ */
+        align-self: center; /* Выравнивание по центру */
+    }
+
+    .user-profile, .favorites {
+        width: 100%; /* блоки на всю ширину */
+    }
+
+    .password-button, .back-button {
+        position: static; /* убрать абсолютное позиционирование */
+        display: block; /* на всю ширину */
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lk-container {
+        padding: 10px;
+    }
+
+    .lk-header {
+        font-size: 20px; /* уменьшить размер шрифта */
+    }
+
+    .user-avatar {
+        width: 80px; /* уменьшить размер аватара */
+        height: 80px;
+    }
+}
+

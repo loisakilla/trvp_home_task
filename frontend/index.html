@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход в систему</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+<div class="login-container">
+    <h2 class="login-header">Вход в систему</h2>
+    <form id="login-form" class="login-form">
+        <input type="text" id="username" placeholder="Имя пользователя" required>
+        <input type="password" id="password" placeholder="Пароль" required>
+        <button type="submit" class="button login-button">Войти</button>
+    </form>
+    <div class="registration-button-container">
+        <button id="registration-button" class="button reg-button">Регистрация</button>
+    </div>
+
+    <div id="registration-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 class="login-header">Регистрация</h2>
+            <form id="registration-form" class="login-form">
+                <input type="text" id="reg-username" placeholder="Логин" required>
+                <input type="password" id="reg-password" placeholder="Пароль" required>
+                <input type="text" id="reg-firstname" placeholder="Имя" required>
+                <input type="text" id="reg-lastname" placeholder="Фамилия" required>
+                <input type="tel" id="reg-phone" placeholder="Телефон" required>
+                <input type="email" id="reg-email" placeholder="Почта" required>
+                <input type="text" id="reg-city" placeholder="Город" required>
+                <button type="submit" class="button login-button">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script type="module" src="index.js"></script>
+</body>
+</html>

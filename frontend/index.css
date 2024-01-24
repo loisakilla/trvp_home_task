@@ -1,0 +1,104 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', serif;
+    background-color: #f4f4f4;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-header {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.login-form input {
+    width: calc(100% - 40px); /* Subtract padding */
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in the element's width and height */
+}
+
+.button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.login-button {
+    width: calc(100% - 40px); /* Subtract padding */
+    margin-top: 10px;
+}
+
+.reg-button {
+    width: calc(100% - 40px); /* Subtract padding */
+    margin-top: 10px;
+}
+/* Стили модального окна */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Остается на месте при прокрутке */
+    z-index: 1; /* Лежит над другими элементами */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Прокрутка, если необходимо */
+    background-color: rgba(0, 0, 0, 0.4); /* Черный фон с непрозрачностью */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% от верха и по центру */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ширина контента */
+    border-radius: 8px; /* Скругленные углы */
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .login-container {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .login-form input, .login-button {
+        width: 100%;
+    }
+}
